@@ -5,5 +5,8 @@
   },
   "eslint.autoFixOnSave": true,
   "prettier.disableLanguages": ["js"],
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

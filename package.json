@@ -7,15 +7,14 @@
     "url": "https://github.com/vadimmarkov/webpack-es6-boilerplate.git"
   },
   "scripts": {
-    "predev": "rimraf dist",
-    "start": "webpack-dev-server --open --mode development",
-    "prebuild": "rimraf dist",
-    "build": "webpack --mode production --display-error-details",
+    "prestart": "npx rimraf dist",
+    "start": "npx webpack-cli-dev-server --open --mode development",
+    "prebuild": "npx rimraf dist",
+    "build": "npx webpack-cli --mode production --display-error-details",
     "eslint": "eslint '**/*.js' --fix --quiet",
     "stylelint": "stylelint 'src/stylesheets/**/*.scss'; exit 0"
   },
   "dependencies": {
-    "apache-server-configs": "^4.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
